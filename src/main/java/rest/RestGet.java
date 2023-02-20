@@ -20,7 +20,7 @@ public class RestGet {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        System.out.println(response.getStatusLine().getStatusCode());
+        //System.out.println(response.getStatusLine().getStatusCode());
         StringBuilder stringBuilder=new StringBuilder();
         if(entity.charAt(0)=='['){
             stringBuilder.append(entity.substring(1,entity.length()-1));
